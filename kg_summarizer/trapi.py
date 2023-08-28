@@ -78,7 +78,6 @@ def query_knowledge_graph(query_graph, answer_coalesce=False, async_query=False,
 
 @dataclass
 class GraphContainer:
-    query_graph: dict
     response: dict
     verbose: bool = True
     result_idx: int = 0
@@ -90,7 +89,7 @@ class GraphContainer:
 
     def __post_init__(self):
         # Check graph type from query graph
-        self.graph_type = 'creative' if 't_edge' in self.query_graph['edges'] else 'lookup'
+        self.graph_type = 'creative' if 't_edge' in self.response['message']['query_graph']['edges'] else 'lookup'
 
         # Remove top layer of response dictionary (assumes the query worked)
         self.response = self.response['message']

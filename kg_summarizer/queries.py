@@ -2,33 +2,67 @@
 
 # Chemicals that might ameliorate Huntington's Disease.
 query_graph_0 = {
-    "nodes": {
+  "message": {
+    "query_graph": {
+      "nodes": {
         "n0": {
-            "categories": [
-                "biolink:ChemicalEntity"
-            ],
-            "name": "Chemical Entity"
+          "categories": [
+            "biolink:ChemicalEntity"
+          ],
+          "name": "Chemical Entity"
         },
         "n1": {
-            "name": "Huntington disease",
-            "categories": [
-                "biolink:Disease"
-            ],
-            "ids": [
-                "MONDO:0007739"
-            ]
+          "name": "Huntington disease",
+          "categories": [
+            "biolink:Disease"
+          ],
+          "ids": [
+            "MONDO:0007739"
+          ]
         }
-    },
-    "edges": {
+      },
+      "edges": {
         "e0": {
-            "subject": "n0",
-            "object": "n1",
-            "predicates": [
-                "biolink:ameliorates"
-            ]
+          "subject": "n0",
+          "object": "n1",
+          "predicates": [
+            "biolink:ameliorates"
+          ]
         }
+      }
     }
+  }
 }
+
+
+# query_graph_0 = {
+#     "nodes": {
+#         "n0": {
+#             "categories": [
+#                 "biolink:ChemicalEntity"
+#             ],
+#             "name": "Chemical Entity"
+#         },
+#         "n1": {
+#             "name": "Huntington disease",
+#             "categories": [
+#                 "biolink:Disease"
+#             ],
+#             "ids": [
+#                 "MONDO:0007739"
+#             ]
+#         }
+#     },
+#     "edges": {
+#         "e0": {
+#             "subject": "n0",
+#             "object": "n1",
+#             "predicates": [
+#                 "biolink:ameliorates"
+#             ]
+#         }
+#     }
+# }
 # Chemicals that interact with a Gene related to Castleman's Disease.
 query_graph_1 = {
     "nodes": {

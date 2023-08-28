@@ -6,3 +6,6 @@ python -m venv venv
 venv\Scripts\activate
 pip install -r .\requirements.txt
 
+# Start FastAPI/Uvicorn Server
+uvicorn main:app --reload
+
