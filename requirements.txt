@@ -61,7 +61,6 @@ jupyter_server==2.7.0
 jupyter_server_terminals==0.4.4
 jupyterlab-pygments==0.2.2
 jupyterlab-widgets==3.0.7
--e git+https://github.com/jrichardson97/kg-summarizer.git@2cd46847c6cbac12d89f9a5ab92970c617c67bcf#egg=kg_summarizer
 langchain==0.0.218
 langchainplus-sdk==0.0.17
 Markdown==3.4.3
