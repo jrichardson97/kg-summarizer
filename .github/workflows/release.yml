@@ -1,8 +1,10 @@
 name: 'Release a new version to Github Packages'
 
 on:
-    release:
-        types: [published]
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 env:
     REGISTRY: ghcr.io
