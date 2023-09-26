@@ -1,3 +1,5 @@
+# Deprecated - Repository moved to https://github.com/RobokopU24/kg-summarizer
+
 # kg-summarizer
 Knowledge graph summarization using LLMs with a FastAPI interface
 
